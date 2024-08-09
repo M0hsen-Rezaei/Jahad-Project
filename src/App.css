@@ -1,38 +1,306 @@
-.App {
-  text-align: center;
+/* media query */
+@import url('./components/assest/mediaQuery/media480.css');
+
+
+:root {
+  --main-coler: #92EFED;
+  --second-coler: rgba(146, 239, 237, 0.75);
+  --bg-coler: #3A00AD;
+  --text-coler: #F6F6F6;
+  --text-coler-second: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'IRAN';
+  src: url(./components/assest/fonts/IRAN.ttf)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'IRANBlack';
+  src: url(./components/assest/fonts/IRANBlack.ttf);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: var(--bg-coler);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 15px 30px 15px;
+}
+
+
+
+/* navbar styling */
+
+.navbar {
+  background-color: var(--text-coler) !important;
+  display: flex !important;
+  border-radius: 32px;
+  position: fixed !important;
+  top: 10px;
+  width: 95%;
+  height: 50px;
+  z-index: 100;
+}
+
+.navbar-brand {
+  margin-left: 30px;
+}
+
+.navbar-brand a {
+  font-size: 18px;
+  font-family: 'IRANBlack';
+  color: var(--text-coler-second);
+  text-decoration: none;
+  padding-right: 7px;
+}
+
+.navbar-brand img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+}
+
+.nav-link {
+  font-size: 15px !important;
+  font-family: 'IRAN';
+  color: var(--text-coler-second) !important;
+
+}
+
+.icon {
+  color: var(--text-coler-second);
+  margin-right: 4px;
+  border-radius: 100%;
+  background-color: #bdbdbd;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon:nth-child(2) {
+  margin-right: 18px !important;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+
+
+
+
+/* slider styling */
+.carousel{
+  height: 80vh;
+  margin-bottom: 85px;
+}
+
+.slider-courses {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.description-text {
+  text-align: center;
+  font-family: 'IRAN';
+  font-size: 16px;
+  width: 75%;
+  padding-top: 50px;
+  color: var(--text-coler);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.description-title {
+  font-family: 'IRANBlack';
+  font-size: 36px;
+  color: var(--text-coler);
+}
+
+.description-title span {
+  color: red;
+}
+
+.preview-img {
+  width: 25vw;
+  height: 17vw;
+}
+
+.carousel-inner,
+.carousel-item,
+.slider-courses {
+  height: 100%;
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview button {
+  background-color: #ECAB14;
+  font-family: 'IRANBlack';
+  font-size: 17px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 32px;
+  width: 40%;
+  padding: 5px;
+}
+
+
+
+
+
+
+/* list cources styling */
+.title-section {
+  font-family: 'IRANBlack';
+  width: 100%;
+  text-align: right;
+  padding: 0 130px 30px 0;
+  font-size: 22px;
+}
+
+.title-section span {
+  background-color: var(--text-coler);
+  padding: 2px 14px 2px 35px;
+  border-radius: 22px 0 22px 22px;
+}
+
+.container-courses {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.title-courses {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%
+}
+
+.title-course {
+  text-align: center;
+  cursor: pointer;
+}
+
+.courses {
+  width: 27%;
+  height: 75vh;
+  background-color: var(--text-coler);
+  border-radius: 48px;
+  padding-inline: 15px;
+  overflow-y: scroll;
+  padding-bottom: 15px;
+}
+
+.title-course p {
+  font-family: 'IRAN';
+  font-size: 17px;
+  color: var(--text-coler);
+  width: 100%;
+}
+
+.title-course img {
+  width: 124px;
+  height: 124px;
+  border-radius: 100%;
+  opacity: 0.8;
+}
+.title-course img:hover{
+  opacity: 1;
+}
+
+.course {
+  background-color: #D9D9D9;
+  border-radius: 32px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.course img {
+  width: 90px;
+  height: 50px;
+}
+
+.course p {
+  font-family: 'IRAN';
+  font-size: 14px;
+  padding-right: 7px;
+  margin: 0;
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+/* footer styling */
+footer {
+  background-color: #29007C;
+  width: 95%;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.section-footer {
+  text-align: center;
+}
+
+.section-footer h5 {
+  font-family: 'IRANBlack';
+  font-size: 20px;
+  color: var(--text-coler);
+}
+
+.section-footer p {
+  font-family: 'IRAN';
+  font-size: 14px;
+  color: var(--text-coler);
+}
+
+#email {
+  height: 40px;
+  width: 200px;
+  border-radius: 8px;
+  border: none;
+  padding: 5px;
+  font-size: 12px;
+  font-family: 'IRAN';
+}
+#email-btn{
+  font-family: 'IRANBlack';
 }
