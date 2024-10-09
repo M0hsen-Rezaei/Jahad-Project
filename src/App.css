@@ -1,5 +1,5 @@
 /* media query */
-@import url('./components/assest/mediaQuery/media480.css');
+@import url('./components//assest//mediaQuery//media480-Main.css');
 
 
 :root {
@@ -26,8 +26,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+a{
+  text-decoration: none !important;
+}
 
-.body {
+.App {
   background-color: var(--bg-coler);
   display: flex;
   flex-direction: column;
@@ -80,7 +83,6 @@
   color: var(--text-coler-second);
   margin-right: 4px;
   border-radius: 100%;
-  background-color: #bdbdbd;
   width: 30px;
   height: 30px;
   display: flex;
@@ -88,14 +90,70 @@
   align-items: center;
 }
 
+#icon-user svg:hover{
+  font-size: 38px;
+}
+#icon-shopp svg:hover{
+  font-size: 38px;
+}
+#icon-telegram svg:hover{
+  color: #006fbe;
+  font-size: 38px;
+}
+#icon-instagram svg:hover{
+  color: #be1300;
+  font-size: 38px;
+}
+#icon-whatsapp svg:hover{
+  color: #2cbe00;
+  font-size: 38px;
+}
+
 .icon:nth-child(2) {
-  margin-right: 18px !important;
+  margin-right: 20px !important;
 }
 
 .icons {
   display: flex;
   flex-direction: row-reverse;
 }
+.btn-close{
+  margin: 0 !important;
+}
+
+.CourceBuyItem{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+.CourceBuyItem img{
+  width: 75px;
+  height: 50px;
+}
+.CourceBuyItem p{
+  text-align: center;
+  direction: rtl;
+  width: 45%;
+  min-width: 85px;
+  overflow: hidden;
+  height: 46px;
+}
+.CourceBuyItem button{
+  width: 37%;
+  padding: 0;
+  height: 40px;
+  min-width: 75px;
+  font-size: 13px;
+}
+
+.alert{
+  width: 29%;
+  margin: auto;
+  min-width: 308px;
+  text-align: center;
+}
+
 
 
 
@@ -135,10 +193,12 @@
   font-family: 'IRANBlack';
   font-size: 36px;
   color: var(--text-coler);
+  text-align: center;
 }
 
 .description-title span {
   color: red;
+  font-family: 'IRANBlack';
 }
 
 .preview-img {
@@ -165,7 +225,7 @@
   margin-top: 30px;
   border: none;
   border-radius: 32px;
-  width: 40%;
+  width: 100%;
   padding: 5px;
 }
 
@@ -176,17 +236,18 @@
 
 /* list cources styling */
 .title-section {
-  font-family: 'IRANBlack';
+  font-family: 'IRAN';
   width: 100%;
   text-align: right;
-  padding: 0 130px 30px 0;
-  font-size: 22px;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .title-section span {
-  background-color: var(--text-coler);
-  padding: 2px 14px 2px 35px;
-  border-radius: 22px 0 22px 22px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  color: #FFFFFF;
 }
 
 .container-courses {
@@ -209,12 +270,24 @@
 
 .courses {
   width: 27%;
-  height: 75vh;
+  height: 72vh;
   background-color: var(--text-coler);
   border-radius: 48px;
   padding-inline: 15px;
   overflow-y: scroll;
   padding-bottom: 15px;
+}
+.courses::-webkit-scrollbar
+{
+  display: none;
+}
+
+.not-cources{
+  font-family: 'IRAN';
+  font-size: 18px;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
 }
 
 .title-course p {
@@ -225,8 +298,8 @@
 }
 
 .title-course img {
-  width: 124px;
-  height: 124px;
+  width: 115px;
+  height: 115px;
   border-radius: 100%;
   opacity: 0.8;
 }
@@ -242,6 +315,7 @@
   flex-direction: row;
   align-items: center;
   padding: 5px 20px;
+  cursor: pointer;
 }
 
 .course img {

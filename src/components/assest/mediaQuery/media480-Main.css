@@ -1,7 +1,7 @@
 /* size <480px */
 @media screen and (max-width :480px) {
     /* navbar styling (480) */
-    .icons{
+    #icon-telegram , #icon-instagram , #icon-whatsapp{
         display: none !important;
     }
     .navbar{
@@ -25,6 +25,30 @@
     }
     .dropdown-menu{
         text-align: right !important;
+    }
+    .navbar-brand{
+        direction: ltr;
+        margin: 0 !important;
+    }
+    .navbar-brand img{
+        width: 35px !important;
+        height: 35px !important;
+        margin-right: 3px
+    }
+    .navbar .container{
+        justify-content: flex-start !important;
+    }
+    .icons{
+        position: fixed;
+        top: 18px;
+        left: 20px;
+    }
+    .navbar-toggler-icon{
+        width: 1.3em;
+        height: 1.3em;
+    }
+    .navbar-collapse{
+        margin-top: 10px;
     }
     
     
@@ -53,8 +77,20 @@
     .preview button{
         margin-top: 20px !important;
         padding: 7px !important;
-        width: 50% !important;
+        width: 100% !important;
     }
+    .CourceBuyItem button{
+        font-size: 10px !important;
+        font-weight: bold;
+    }
+    .modal-body{
+        padding: 20px 5px 0 0 !important;
+      }
+    .description-title{
+        margin-top: 20px;
+        font-size: 30px !important;
+    }
+    
 
 
 
@@ -90,6 +126,9 @@
     }
     #email-btn{
         margin-top: 5px;
+    }
+    .section-footer p {
+        font-size: 10px !important;
     }
 
 }

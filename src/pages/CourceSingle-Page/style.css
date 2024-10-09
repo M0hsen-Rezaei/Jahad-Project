@@ -1,0 +1,126 @@
+/* media query */
+@import url('../../components/assest/mediaQuery/media480-CourceSingle.css');
+
+@font-face {
+    font-family: 'IRAN';
+    src: url(../../components/assest/fonts/IRAN.ttf)
+  }
+  
+  @font-face {
+    font-family: 'IRANBlack';
+    src: url(../../components/assest/fonts/IRANBlack.ttf);
+  }
+:root {
+    --bg-box : #d9d9d9
+}
+*{
+    color: #000000;
+}
+.main{
+    width: 90%;
+}
+#CourcePage{
+    width: 95%;
+    padding-block: 90px;
+}
+
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.CourceTitle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+}
+
+.CourceImg {
+    width: 88vw;
+    max-width: 557px;
+    height: 55vw;
+    border-radius: 16px;
+    max-height: 321px;
+}
+
+.CourceName{
+    font-family: 'IRANBlack';
+    font-size: 38px;
+}
+
+
+
+
+
+.CourceSummary {
+    background-color: var(--bg-box);
+    border-radius: 16px;
+    max-width: 350px;
+    width: 85vw;
+    text-align: center;
+    height: 393px;
+}
+
+.CourcePrice{
+    font-family: 'IRAN';
+    font-weight: bold;
+    font-size: 26px;
+    padding-top: 1.5rem;
+}
+
+.FeatureCource{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: flex-start;
+    font-size: 18px;
+    padding-right: 10px;
+}
+.FeatureCource svg{
+    font-size: 30px !important;
+    padding-left: 5px;
+}
+
+.TitleList{
+    font-family: 'IRAN';
+    font-weight: bold;
+}
+
+.ItemList{
+    font-family: 'IRAN';
+    padding-right: 5px;
+}
+
+.BtnBuy{
+    font-family: 'IRANBlack';
+    margin-top: 15px;
+}
+.BtnBuy svg path{
+    color: #ffffff;
+}
+
+
+
+
+
+.section2 {
+    margin-top: 65px;
+    max-width: 1060px;
+    width: 85vw;
+    margin-inline: auto;
+    background-color: var(--bg-box);
+    padding: 40px 120px;
+    text-align: justify;
+    border-radius: 16px;
+}
+.TitleSection2{
+    font-family: 'IRAN';
+    font-weight: bold;
+    font-size: 20px;
+}
+.CourceDescription{
+    font-family: 'IRAN';
+}

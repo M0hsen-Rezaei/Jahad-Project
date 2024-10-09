@@ -1,0 +1,37 @@
+@media screen and (max-width :480px) {
+
+    .section1{
+        flex-direction: column !important;
+    }
+    .main , #CourcePage{
+        width: 100% !important;
+    }
+    #CourcePage{
+        padding-block: 30px !important;
+    }
+    .CourceName{
+        font-size: 30px !important;
+    }
+    .CourceSummary{
+        margin-top: 30px;
+        height: 300px !important;
+    }
+    .ItemList{
+        font-size: 15px;
+    }
+    .TitleList{
+        font-size: 15px;
+    }
+    .CourcePrice{
+        font-size: 20px !important;
+    }
+    .section2{
+        padding: 31px 10px !important;
+        font-size: 15px !important;
+        margin: auto !important;
+        margin-top: 40px !important;
+    }
+    .TitleSection2{
+        text-align: center;
+    }
+}
