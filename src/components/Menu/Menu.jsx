@@ -55,23 +55,11 @@ export default function Menu() {
                                     نرم افزار های مهندسی مکانیک
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <NavDropdown title="درباره ما" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">اول</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">دوم</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">سوم</NavDropdown.Item>
-                            </NavDropdown>
-                            <NavDropdown title="مقالات" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">اول</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">دوم</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">سوم</NavDropdown.Item>
-                            </NavDropdown>
-                            <NavDropdown title="دانلود نرم افزار" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">اول</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">دوم</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">سوم</NavDropdown.Item>
-                            </NavDropdown>
-                            <Nav.Link className='nav-link' href="#home">سوالات متداول</Nav.Link>
-                            <Nav.Link className='nav-link' href="#home">ورود/ثبت نام</Nav.Link>
+                            <Nav.Link className='nav-link' as={Link} to={'/comingSoon'}>مقالات</Nav.Link>
+                            <Nav.Link className='nav-link' as={Link} to={'/comingSoon'}>درباره ما</Nav.Link>
+                            <Nav.Link className='nav-link' as={Link} to={'/comingSoon'}>دانلود نرم افزار</Nav.Link>
+                            <Nav.Link className='nav-link' as={Link} to={'/comingSoon'} >سوالات متداول</Nav.Link>
+                            <Nav.Link className='nav-link' as={Link} to={'/comingSoon'} href="#home">ورود/ثبت نام</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                     <div className="icons">

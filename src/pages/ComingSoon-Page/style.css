@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'IRANBlack';
+    src: url(../../components/assest/fonts/IRANBlack.ttf);
+  }
+
+.ComingSoon{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    margin-top: 50px;
+}
+.ComingSoon h3{
+    font-family: 'IRANBlack';
+    font-size: 50px;
+}
